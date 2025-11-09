@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# CV de Sheynner Zavala - Aplicación React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una aplicación web moderna y responsiva para mostrar el CV de Sheynner Zavala, desarrollada con React, Tailwind CSS y animaciones avanzadas.
 
-## Available Scripts
+## 🚀 Características
 
-In the project directory, you can run:
+- **Diseño Ultra-Moderno**: Interfaz con animaciones fluidas y diseño responsivo
+- **Tema Oscuro/Claro**: Cambio dinámico entre temas con persistencia
+- **PDF Exportable**: Funcionalidad para descargar el CV en formato PDF
+- **Carrusel de Proyectos**: Showcase interactivo de proyectos con imágenes
+- **Gestión de Datos**: Sistema CRUD para editar información del CV
+- **Animaciones**: Transiciones suaves con Framer Motion
+- **Íconos Modernos**: Utiliza Lucide React para íconos consistentes
 
-### `npm start`
+## 📋 Tecnologías Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 19.2.0
+- **Estilos**: Tailwind CSS 3.4.18
+- **Animaciones**: Framer Motion 12.23.24
+- **Íconos**: Lucide React 0.553.0
+- **PDF Export**: html2pdf.js 0.12.1
+- **Build Tool**: Create React App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Instalación y Uso Local
 
-### `npm test`
+### Prerequisitos
+- Node.js (versión 14 o superior)
+- npm o yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pasos de Instalación
 
-### `npm run build`
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/sheynner-dev/cv.git
+   cd cv
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Instalar dependencias**
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Iniciar el servidor de desarrollo**
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Abrir en el navegador**
+   - La aplicación se abrirá automáticamente en [http://localhost:3000](http://localhost:3000)
 
-### `npm run eject`
+## 📦 Despliegue en GitHub Pages
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Configuración Automática
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+El proyecto ya está configurado para desplegarse en GitHub Pages. Solo necesitas:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Hacer push al repositorio**
+   ```bash
+   git add .
+   git commit -m "Actualización del CV"
+   git push origin main
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Desplegar a GitHub Pages**
+   ```bash
+   npm run deploy
+   ```
 
-## Learn More
+### URL del Sitio Web
+- **GitHub Pages**: [https://sheynner-dev.github.io/cv](https://sheynner-dev.github.io/cv)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔧 Scripts Disponibles
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `npm start` - Inicia el servidor de desarrollo
+- `npm run build` - Crea la versión de producción
+- `npm test` - Ejecuta las pruebas
+- `npm run eject` - Expulsa de Create React App (⚠️ irreversible)
+- `npm run deploy` - Despliega a GitHub Pages
 
-### Code Splitting
+## 📁 Estructura del Proyecto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+cv/
+├── public/
+│   ├── docs/          # Documentos PDF
+│   ├── images/        # Imágenes de proyectos y perfil
+│   └── index.html     # HTML principal
+├── src/
+│   ├── App.js         # Componente principal
+│   ├── cv.jsx         # Componente del CV
+│   └── index.js       # Punto de entrada
+├── package.json       # Dependencias y scripts
+├── tailwind.config.js # Configuración de Tailwind
+└── README.md         # Este archivo
+```
 
-### Analyzing the Bundle Size
+## 🎨 Personalización
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Editar Información del CV
 
-### Making a Progressive Web App
+El CV utiliza datos estáticos definidos en `src/cv.jsx`. Para actualizar la información:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Abre `src/cv.jsx`
+2. Modifica el objeto `initialData` con tu información
+3. Reinicia el servidor de desarrollo para ver los cambios
 
-### Advanced Configuration
+### Cambiar Imágenes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Perfil**: Reemplaza `public/images/perfil.png`
+- **Proyectos**: Añade imágenes en `public/images/` y actualiza las referencias en `initialData`
 
-### Deployment
+## 📱 Características del Diseño
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Totalmente Responsivo**: Se adapta a todos los tamaños de pantalla
+- **Tema Oscuro/Claro**: Cambio instantáneo con persistencia
+- **Animaciones Suaves**: Transiciones fluidas entre secciones
+- **Carga Optimizada**: Imágenes optimizadas y lazy loading
 
-### `npm run build` fails to minify
+## 🔒 Seguridad
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Sin dependencias con vulnerabilidades críticas
+- Código abierto y transparente
+- Sin almacenamiento de datos sensibles
+
+## 📄 Licencia
+
+Este proyecto es de código abierto y está disponible para uso personal y educativo.
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Por favor:
+
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+## 📞 Contacto
+
+Sheynner Zavala - [@sheynner-dev](https://github.com/sheynner-dev)
+
+Link del Proyecto: [https://github.com/sheynner-dev/cv](https://github.com/sheynner-dev/cv)
+
+---
+
+⭐ Si este proyecto te fue útil, ¡no olvides darle una estrella!
